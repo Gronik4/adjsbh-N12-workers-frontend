@@ -1,0 +1,11 @@
+{
+  "name": "PWA for homework serviceWorkers frontend",
+  "short_name": "PWA SW ",
+  "manifest_version": 2,
+  "version" : "0.1",
+  "theme_color": "#c8f7ef",
+  "background_color": "#a5e5da",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/."
+}
