@@ -12,11 +12,7 @@
     "preshow:doc": "npm run doc",
     "show:doc": "live-server doc",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist",
-    "prod:sw": "npm run webpack            -- --env.mode production  --env.presets serviceworker",
-    "prod:manifest": "npm run webpack            -- --env.mode production  --env.presets manifest",
-    "dev:sw": "npm run webpack-dev-server -- --env.mode development --env.presets serviceworker",
-    "dev:manifest": "npm run webpack-dev-server -- --env.mode development --env.presets manifest"
+    "show:dist": "live-server dist"
   },
   "repository": {
     "type": "git",
