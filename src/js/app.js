@@ -1,4 +1,5 @@
 import CreateContent from './createContent';
+import Worker from './sw';
 
 export default class App {
   constructor() {
@@ -11,6 +12,7 @@ export default class App {
 
   init() {
     this.hendlerProgress();
+
     window.addEventListener('load', async () => {
       if ('serviceWorker' in navigator) {
         await navigator.serviceWorker.register('./service-worker.js').then((reg) => {
@@ -20,6 +22,10 @@ export default class App {
         });
       }
     });
+    // const worker = new Worker();
+    /* worker.addEventListener('message', ({ data: result }) => {
+      console.log(result);
+    }); */
   }
 
   hendlerProgress() {
